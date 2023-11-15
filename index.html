@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: #927dfc;
+
+        }
+
+        * {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .main {
+
+            border-radius: 20px;
+            margin: auto;
+            width: 500px;
+            height: 300px;
+            background-color: white;
+
+        }
+
+        .head {
+            text-align: center;
+            padding-top: 10px;
+            width: 500px;
+            height: 50px;
+            border-bottom: solid 2px rgb(56, 55, 55);
+        }
+
+
+        .para {
+            margin: auto;
+            width: 400px;
+            height: 70px;
+            border: solid 2px gray;
+            color: black;
+            font-size: 42px;
+            font-weight: bold;
+            text-align: center;
+            padding-bottom: 20px;
+
+        }
+
+
+        .btn {
+            display: flex;
+
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .btn button {
+            background-color: #927dfc;
+            color: white;
+            border: none;
+            padding: 5px;
+            font-size: 20px;
+            font-weight: bolder;
+            width: 170px;
+        }
+
+
+        .para2 {
+            margin: auto;
+            width: 400px;
+            height: 70px;
+            border: solid 2px gray;
+            color: black;
+            font-size: 42px;
+            font-weight: bold;
+            text-align: center;
+            padding-bottom: 20px;
+
+
+
+        }
+
+        .head2 {
+            margin: auto !important;
+        }
+
+        .show{
+            font-size: 14px;
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="head">
+            <h2>Password Generator</h2>
+        </div>
+        <br><br>
+        <div class="para">
+            <p id="setPass"></p>
+
+        </div>
+        <br>
+        <div class="btn">
+            <button onclick="generate()">Generate</button>
+            <br>
+            <button onclick="copyText()">Copy Text</button>
+        </div>
+
+    </div>
+
+    <br> <br>
+
+    <div class="main">
+        <div class="head">
+            <h2>Validate Password </h2>
+        </div>
+        <br><br>
+        <div class="head2">
+            <center> <input class="para2" id="getPass" type="text"> 
+            <p class="show" id="show"></p>
+        </center>
+        </div>
+        <br>
+        <div class="btn">
+            <button onclick="validate()">Check</button>
+
+        </div>
+
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
